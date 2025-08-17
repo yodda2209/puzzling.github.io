@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Puzzle</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background:floralwhite;
+    }
+    nav {
+      background:coral;
+      padding: 15px;
+      text-align: center;
+    }
+    nav a {
+      color:aliceblue;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 18px;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    h1 {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .puzzle-container {
+      display: grid;
+      grid-template-columns: repeat(3, 150px);
+      grid-template-rows: repeat(3, 150px);
+      gap: 5px;
+      margin: 30px auto;
+      width: max-content;
+    }
+    .piece {
+      width: 150px;
+      height: 150px;
+      background-image: url("https://placedog.net/450/450");
+      background-size: 450px 450px; 
+      border: 2px solid brown;
+    }
+    .piece1 { background-position: 0 0; }
+    .piece2 { background-position: -150px 0; }
+    .piece3 { background-position: -300px 0; }
+    .piece4 { background-position: 0 -150px; }
+    .piece5 { background-position: -150px -150px; }
+    .piece6 { background-position: -300px -150px; }
+    .piece7 { background-position: 0 -300px; }
+    .piece8 { background-position: -150px -300px; }
+    .piece9 { background-position: -300px -300px; }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Puzzle</a>
+  </nav>
+  <h1>Puzzle</h1>
+  <p style="text-align:center">Find out the Piece!!!Use the Brainpower.</p>
+  <div class="puzzle-container">
+    <div class="piece piece1"></div>
+    <div class="piece piece2"></div>
+    <div class="piece piece3"></div>
+    <div class="piece piece4"></div>
+    <div class="piece piece5"></div>
+    <div class="piece piece6"></div>
+    <div class="piece piece7"></div>
+    <div class="piece piece8"></div>
+    <div class="piece piece9"></div>
+  </div>
+</body>
+</html>
